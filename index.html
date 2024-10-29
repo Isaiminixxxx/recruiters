@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        // Array of URLs to redirect to (replaced with given URLs)
+        const urls = [
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/&ved=2ahUKEwisyN-Jp7CJAxXCS2wGHeaMMLwQFnoECAgQAQ&usg=AOvVaw0LCoPJf26ShZh_L2M-XcDm',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/disclaimer/&ved=2ahUKEwiv4JDop7CJAxXRT2wGHS7NETYQFnoECCIQAQ&usg=AOvVaw2Z8xxGA1Gcyw7dj0lmX92f',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/about-us/&ved=2ahUKEwiv4JDop7CJAxXRT2wGHS7NETYQFnoECCMQAQ&usg=AOvVaw1CklWmTEkF-tKBUs0msA4Y',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/what-is-globalization/&ved=2ahUKEwiv4JDop7CJAxXRT2wGHS7NETYQFnoECCgQAQ&usg=AOvVaw1ptvknDlDer2MUoBYqPZdg',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/employer-of-record/&ved=2ahUKEwiv4JDop7CJAxXRT2wGHS7NETYQFnoECCUQAQ&usg=AOvVaw1GXYxLmndNRJ9GJQscnWDP',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/hiring/mastering-global-compliance/&ved=2ahUKEwiv4JDop7CJAxXRT2wGHS7NETYQFnoECCEQAQ&usg=AOvVaw3Ir0A9eo0wCTtD2KEyfRWT',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/global-business/luxembourg-subsidiary/&ved=2ahUKEwiv4JDop7CJAxXRT2wGHS7NETYQFnoECB0QAQ&usg=AOvVaw0xTd-WPwLX0EeyVkn_Yo0k',
+            'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.colombiarecruiter.com/global-business/luxembourg-business-expansion/&ved=2ahUKEwiWn6CPqLCJAxXBRmcHHVPGDp44ChAWegQICRAB&usg=AOvVaw1NW8RcvxY53UYFZ5nQoOB1'
+        ];
+
+        // Function to randomly select a URL and redirect
+        function randomRedirect() {
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.replace(urls[randomIndex]); // Direct redirection without warning
+        }
+
+        // Call the redirect function as soon as the page loads
+        window.onload = randomRedirect;
+    </script>
+</head>
+<body>
+</body>
+</html>
